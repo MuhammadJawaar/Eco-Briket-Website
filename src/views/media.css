@@ -1,0 +1,88 @@
+.media-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dl-color-theme-neutral-light);
+    padding: 20px; /* Add some padding */
+  }
+  
+  .media-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Space between title and images */
+  }
+  
+  .media-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional: Max width for large screens */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .media-images {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    height: auto; 
+  }
+  
+  .media-image {
+    min-width: 100%;
+    height: auto; /* Ensure the image height adjusts automatically */
+    max-height: 80vh; /* Adjust height as needed */
+    object-fit: contain; /* Maintain aspect ratio and fit within container */
+    opacity: 0.5;
+    position: relative; /* Ensure images are positioned above overlays */
+     /* Higher z-index to ensure hover effect applies to images */
+  }
+  
+  .media-image.current {
+    opacity: 1;
+  }
+  
+  .media-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    opacity: 1; /* Ensure hover image is fully opaque */
+  }
+  
+  .media-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    cursor: pointer;
+    z-index: 1; /* Lower z-index so overlay is beneath images */
+  }
+  
+  .media-overlay.left {
+    left: 0;
+  }
+  
+  .media-overlay.right {
+    right: 0;
+  }
+  
+  .poster-container {
+    margin-top: 40px; /* Space between images and poster */
+    text-align: center; /* Center align poster title */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Optional: Max width for large screens */
+  }
+  
+  .poster-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between title and poster */
+  }
+  
+  .poster-image {
+    width: 100%;
+    height: auto; /* Ensure the poster maintains its aspect ratio */
+    display: block;
+  }
+  
