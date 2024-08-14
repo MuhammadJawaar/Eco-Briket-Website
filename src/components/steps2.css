@@ -44,6 +44,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  border-radius: 9px; /* Adjust border-radius for rounded corners */
 }
 
 .steps2-video iframe {
@@ -59,6 +60,12 @@
   top: 10%;
   position: sticky;
   margin-bottom: var(--dl-space-space-twounits);
+}
+.steps2-container7 {
+  top: 10%;
+  position: sticky;
+  margin-bottom: 43px;
+  background-color: var(--dl-color-theme-accent2);
 }
 
 .steps2-container3 {
@@ -127,8 +134,9 @@
     width: 100%;
   }
   .steps2-video {
-    width: 100%; /* Full width on mobile */
+    width: 50%; /* Full width on mobile */
     height: 40vh; /* Adjust height for mobile */
+    border-radius: 10px; /* Adjust border-radius for mobile */
   }
 }
 

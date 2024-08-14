@@ -3,11 +3,29 @@ import Navbar8 from '../components/navbar8'; // Import Navbar8 component
 import Footer4 from '../components/footer4'; // Import Footer4 component
 import './media.css'; // Import custom CSS for Media component
 
+// Import all 18 images from src/assets
+import img1 from '../assets/1.png';
+import img2 from '../assets/2.png';
+import img3 from '../assets/3.png';
+import img4 from '../assets/4.png';
+import img5 from '../assets/5.png';
+import img6 from '../assets/6.png';
+import img7 from '../assets/7.png';
+import img8 from '../assets/8.png';
+import img9 from '../assets/9.png';
+import img10 from '../assets/10.png';
+import img11 from '../assets/11.png';
+import img12 from '../assets/12.png';
+import img13 from '../assets/13.png';
+import img14 from '../assets/14.png';
+import img15 from '../assets/15.png';
+import img16 from '../assets/16.png';
+import img17 from '../assets/17.png';
+import img18 from '../assets/18.png';
+
 const images = [
-  'https://via.placeholder.com/600x800?text=Page+1',
-  'https://via.placeholder.com/600x800?text=Page+2',
-  'https://via.placeholder.com/600x800?text=Page+3',
-  'https://via.placeholder.com/600x800?text=Page+4',
+  img1, img2, img3, img4, img5, img6, img7, img8, img9,
+  img10, img11, img12, img13, img14, img15, img16, img17, img18,
 ];
 
 const Media = () => {
@@ -39,7 +57,6 @@ const Media = () => {
         link3={
           <span className="media-text002 thq-link thq-body-small">About</span>
         }
-        // Add other links or props as needed
       />
       <div className="media-container">
         <h2 className="media-title">Flipbook</h2> {/* Title for the image gallery */}
@@ -70,6 +87,16 @@ const Media = () => {
             alt="Poster"
             className="poster-image"
           />
+        </div>
+        <div className="download-container">
+          <a
+            href="https://bit.ly/eco-briket" // Replace with your actual URL
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-link"
+          >
+            Link Drive Media
+          </a>
         </div>
       </div>
       <Footer4

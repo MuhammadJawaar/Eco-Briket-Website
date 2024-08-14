@@ -34,11 +34,11 @@
   .media-image {
     min-width: 100%;
     height: auto; /* Ensure the image height adjusts automatically */
-    max-height: 80vh; /* Adjust height as needed */
+    max-height: 100vh; /* Adjust height as needed */
     object-fit: contain; /* Maintain aspect ratio and fit within container */
     opacity: 0.5;
     position: relative; /* Ensure images are positioned above overlays */
-     /* Higher z-index to ensure hover effect applies to images */
+    z-index: 0; /* Higher z-index to ensure hover effect applies to images */
   }
   
   .media-image.current {
@@ -84,5 +84,24 @@
     width: 100%;
     height: auto; /* Ensure the poster maintains its aspect ratio */
     display: block;
+  }
+  
+  .download-container {
+    margin-top: 20px; /* Space between poster and download link */
+    text-align: center; /* Center align download link */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px;
+  }
+  
+  .download-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000; /* Adjust color to match your design */
+    text-decoration: none;
+    transition: color 0.5s ease-in-out; /* Smooth transition for color change */
+  }
+  
+  .download-link:hover {
+    color: blue; /* Change color to blue on hover */
   }
   

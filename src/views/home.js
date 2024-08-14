@@ -69,7 +69,7 @@ const Home = (props) => {
         feature1Title={
           <Fragment>
             <h2 className="home-text018 thq-heading-2">
-              Daur Ulang Kotoran Sapi
+              Bahan baku yang melimpah
             </h2>
           </Fragment>
         }
@@ -81,27 +81,28 @@ const Home = (props) => {
         feature3Title={
           <Fragment>
             <h2 className="home-text020 thq-heading-2">
-              Bahan Baku Terbarukan
+              Mudah dan Murah
             </h2>
           </Fragment>
         }
         feature1Description={
           <Fragment>
             <span className="home-text021 thq-body-small">
-              Eco briket ini dibuat dari kotoran sapi yang telah diproses secara
-              higienis.
+              Ketersediaan bahan baku yang melimpah dan mudah didapatkan serta tidak berasap
             </span>
           </Fragment>
         }
         feature2Description={
           <Fragment>
-            <span className="home-text022 thq-body-small">Mudah Digunakan</span>
+            <span className="home-text022 thq-body-small">Praktis dan mudah digunakan
+            </span>
           </Fragment>
         }
         feature3Description={
           <Fragment>
             <span className="home-text023 thq-body-small">
-              Ramah Lingkungan
+              Proses pembuatan yang mudah dan tidak memakan
+              biaya produksi yang besar
             </span>
           </Fragment>
         }
@@ -114,12 +115,12 @@ const Home = (props) => {
         }
         feature2Title={
           <Fragment>
-            <h2 className="home-text028 thq-heading-2">Efisien</h2>
+            <h2 className="home-text028 thq-heading-2">Panas yang Efisien</h2>
           </Fragment>
         }
         feature3Title={
           <Fragment>
-            <h2 className="home-text029 thq-heading-2">Mudah Didapatkan</h2>
+            <h2 className="home-text029 thq-heading-2">Minim Resiko</h2>
           </Fragment>
         }
         feature1Description={
@@ -133,16 +134,15 @@ const Home = (props) => {
         feature2Description={
           <Fragment>
             <span className="home-text031 thq-body-small">
-              Menghasilkan panas yang tinggi dan tahan lama, membuatnya menjadi
-              pilihan bahan bakar yang efisien.
+            Panas yang dihasilkan tinggi dan kontinu yang berarti sangat baik jika digunakan untuk proses pembakaran dengan waktu yang relatif lama
             </span>
           </Fragment>
         }
         feature3Description={
           <Fragment>
             <span className="home-text032 thq-body-small">
-              Bahan baku kotoran sapi mudah didapatkan, sehingga produksi eco
-              briket dapat dilakukan secara berkelanjutan.
+            Tidak memiliki risiko meledak atau terbakar seperti
+            kompor gas konvensional.
             </span>
           </Fragment>
         }

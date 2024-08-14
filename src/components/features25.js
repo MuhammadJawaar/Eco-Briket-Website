@@ -126,9 +126,9 @@ const Features25 = (props) => {
 
 Features25.defaultProps = {
   feature1ImgAlt: 'Gambar Eco Briket Ramah Lingkungan',
-  feature2ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature2ImgSrc: 'https://nudira.com/wp-content/uploads/2024/07/A-high-quality-image-of-a-grilling-scene-featuring-coconut-charcoal-briquettes.-The-briquettes-are-burning-evenly-producing-a-steady-smokeless-flame.webp',
   feature3ImgSrc:
-    'https://images.unsplash.com/photo-1693569444434-85aa71939cd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMzM2NDk3MXw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuHzbb6ECA5m2H0iYqt1jBnPlLnkoMi-xpGQ&s',
   feature2Title: undefined,
   feature2ImgAlt: 'Gambar Eco Briket Efisien',
   feature1ImgSrc:

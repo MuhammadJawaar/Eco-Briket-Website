@@ -130,14 +130,14 @@ Features24.defaultProps = {
   feature1Title: undefined,
   feature3ImgAlt: 'Bahan Baku Terbarukan',
   feature3ImgSrc:
-    'https://images.unsplash.com/photo-1692286375229-7511455115f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMzM2NDk2OXw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg',
   feature3Title: undefined,
   feature1Description: undefined,
   feature2Description: undefined,
-  feature2ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature2ImgSrc: 'https://source.boomplaymusic.com/buzzgroup1/M00/31/3A/rBEeLGJnpA6AG6SBAAFcP5s_K6Q626.jpg',
   feature2ImgAlt: 'Mudah Digunakan',
   feature1ImgSrc:
-    'https://images.unsplash.com/photo-1718169394391-535f4dc1e72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMzM2NDk3MHw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg',
   feature1ImgAlt: 'Eco Briket dari Kotoran Sapi',
 }
 

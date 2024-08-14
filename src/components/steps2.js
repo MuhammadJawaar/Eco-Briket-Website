@@ -123,7 +123,7 @@ const Steps2 = (props) => {
                 )}
               </span>
             </div>
-            <div className="steps2-container6 thq-card">
+            <div className="steps2-container7 thq-card">
               <h2>
                 {props.step6Title ?? (
                   <Fragment>
