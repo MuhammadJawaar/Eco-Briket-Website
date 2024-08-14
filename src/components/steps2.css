@@ -14,7 +14,9 @@
   flex-direction: row;
 }
 .steps2-container1 {
-  align-items: start;
+  display: flex;
+  justify-content: center; /* Center horizontally */ /* Center vertically if needed */
+  width: 100%;
 }
 .steps2-section-header {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -32,11 +34,22 @@
 .steps2-container2 {
   grid-area: span 1/span 1/span 1/span 1;
 }
-.steps2-video{
-  top: 20%;
-  transform: rotate(0deg);
+.steps2-video {
+  width: 26%; /* Adjust width to make it vertical */
+  height: 90vh; /* Adjust height to make it taller */
+  position: relative; /* Ensure it respects the top offset */
   background-color: var(--dl-color-theme-accent1);
+  overflow: hidden; /* Hide overflow to maintain aspect ratio */
+  display: flex;
+  justify-content: center; /* Center horizontally */
 }
+
+.steps2-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .steps2-container3 {
   top: 10%;
   position: sticky;

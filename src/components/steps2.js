@@ -1,21 +1,22 @@
-import React, { Fragment } from 'react'
-
-import PropTypes from 'prop-types'
-
-import './steps2.css'
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import './steps2.css';
 
 const Steps2 = (props) => {
+  // Create the Google Drive embed URL
+  const googleDriveUrl = `https://drive.google.com/file/d/${props.videoId}/preview`;
+
   return (
     <div className="steps2-container thq-section-padding">
       <div className="steps2-max-width thq-section-max-width">
         <div className="steps2-container1 thq-grid-2">
-          {/* Menggantikan header section dengan video YouTube */}
+          {/* Replace header section with Google Drive video */}
           <div className="steps2-video">
             <iframe
               width="100%"
               height="315"
-              src={`https://www.youtube.com/embed/${props.videoId}`}
-              title="YouTube video player"
+              src={googleDriveUrl}
+              title="Google Drive video player"
               frameBorder="0"
               allow="autoplay"
               allowFullScreen
@@ -36,7 +37,7 @@ const Steps2 = (props) => {
                 {props.step1Description ?? (
                   <Fragment>
                     <span className="steps2-text16 thq-body-small">
-                      jemur dan Keringkan feses sapi hingga kadar airnya hanya tersisa 1%
+                      Jemur dan keringkan feses sapi hingga kadar airnya hanya tersisa 1%
                     </span>
                   </Fragment>
                 )}
@@ -96,7 +97,7 @@ const Steps2 = (props) => {
                 {props.step4Description ?? (
                   <Fragment>
                     <span className="steps2-text16 thq-body-small">
-                      Buatlah perekat dengan mencampurkan air dan tepung kanji/tapioca dengan Perbandingan air : tapioka (1:3)
+                      Buatlah perekat dengan mencampurkan air dan tepung kanji/tapioca dengan perbandingan air: tapioka (1:3)
                     </span>
                   </Fragment>
                 )}
@@ -104,7 +105,7 @@ const Steps2 = (props) => {
             </div>
             <div className="steps2-container5 thq-card">
               <h2>
-                {props.step4Title ?? (
+                {props.step5Title ?? (
                   <Fragment>
                     <h2 className="steps2-text18 thq-heading-2">
                       5
@@ -113,10 +114,10 @@ const Steps2 = (props) => {
                 )}
               </h2>
               <span>
-                {props.step4Description ?? (
+                {props.step5Description ?? (
                   <Fragment>
                     <span className="steps2-text16 thq-body-small">
-                    Campurkan sampel briket dengan larutan tapioka hingga rata dan Cetak/bentuk sampel sesuai selera
+                      Campurkan sampel briket dengan larutan tapioka hingga rata dan cetak/bentuk sampel sesuai selera
                     </span>
                   </Fragment>
                 )}
@@ -124,7 +125,7 @@ const Steps2 = (props) => {
             </div>
             <div className="steps2-container6 thq-card">
               <h2>
-                {props.step4Title ?? (
+                {props.step6Title ?? (
                   <Fragment>
                     <h2 className="steps2-text18 thq-heading-2">
                       6
@@ -133,7 +134,7 @@ const Steps2 = (props) => {
                 )}
               </h2>
               <span>
-                {props.step4Description ?? (
+                {props.step6Description ?? (
                   <Fragment>
                     <span className="steps2-text16 thq-body-small">
                       Keringkan briket kurang lebih 2 hari dan briket siap untuk digunakan
@@ -146,31 +147,39 @@ const Steps2 = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Steps2.defaultProps = {
-  step4Title: undefined,
-  step2Description: undefined,
-  step3Title: undefined,
   step1Title: undefined,
-  step4Description: undefined,
-  step3Description: undefined,
-  step1Description: undefined,
   step2Title: undefined,
-  videoId: 'dQw4w9WgXcQ', // ID video YouTube default
-}
+  step3Title: undefined,
+  step4Title: undefined,
+  step5Title: undefined,
+  step6Title: undefined,
+  step1Description: undefined,
+  step2Description: undefined,
+  step3Description: undefined,
+  step4Description: undefined,
+  step5Description: undefined,
+  step6Description: undefined,
+  videoId: '1Vh3oSSaQgdnTeWnf6Csedh7OElyMqvRV', // Default Google Drive file ID
+};
 
 Steps2.propTypes = {
-  step4Title: PropTypes.element,
-  step2Description: PropTypes.element,
-  step3Title: PropTypes.element,
   step1Title: PropTypes.element,
-  step4Description: PropTypes.element,
-  step3Description: PropTypes.element,
-  step1Description: PropTypes.element,
   step2Title: PropTypes.element,
-  videoId: PropTypes.string, // Menambahkan prop untuk ID video YouTube
-}
+  step3Title: PropTypes.element,
+  step4Title: PropTypes.element,
+  step5Title: PropTypes.element,
+  step6Title: PropTypes.element,
+  step1Description: PropTypes.element,
+  step2Description: PropTypes.element,
+  step3Description: PropTypes.element,
+  step4Description: PropTypes.element,
+  step5Description: PropTypes.element,
+  step6Description: PropTypes.element,
+  videoId: PropTypes.string, // Google Drive file ID
+};
 
-export default Steps2
+export default Steps2;
